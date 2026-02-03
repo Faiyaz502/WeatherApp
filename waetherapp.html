@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+   
+    }
+
+    body {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .weather-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .weather-card h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .weather-card .icon {
+      font-size: 10rem;
+        
+        height: 10rem;
+   
+    }
+
+    .weather-card #temperature {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      
+      
+    }
+
+    .weather-card #description {
+      font-size: 1.2rem;
+      margin: 15px 0 20px;
+      text-transform: capitalize;
+      border: 2px solid black;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 5rem;
+      background-color: black;
+      
+    }
+
+    .weather-card #location {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    #search-box {
+      margin-top: 20px;
+    }
+
+    #search-box input {
+      width: 80%;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    #search-box button {
+      background: #fff;
+      color: #764ba2;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    #search-box button:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- <div class="one">
+
+        <div class="sec1">
+
+            <p id="feel">Feels Like </p>
+            <p>10</p>
+
+        </div>
+        <div class="sec2"></div>
+
+
+
+
+
+
+    </div> -->
+
+
+    
+
+  <div class="weather-card">
+    <h1>Weather App</h1>
+    <div class="icon"><i class="fas fa-cloud-sun"></i></div>
+    <div id ="temperature"></div>
+    <div style="display: flex ; justify-content: space-around;">
+ <div id ="min"></div>
+    <div id ="max"></div>
+    </div>
+   
+    <div id ="description"></div>
+    
+    <div id ="location">Dhaka, Bangladesh</div>
+    <div id ="date"></div>
+    
+
+    <form id ="search-box">
+      <input type="text" placeholder="Enter city name" />
+      <br />
+      <button type="submit">Search</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="weatherapp.js"></script>
+</body>
+</html>
